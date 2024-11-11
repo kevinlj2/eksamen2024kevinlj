@@ -21,16 +21,17 @@
         </a>
         <nav class="flex-space-between">
           <form id="search-bar">
-            <label for="search" hidden>Søk</label>
-            <input type="search" placeholder="søk her" />
-            <button>
+            <label for="search">
+              <input type="search" placeholder="søk her" id="search" />
+            </label>
+            <button type="submit">
               <span><i class="fa-solid fa-magnifying-glass"></i></span>
             </button>
           </form>
           <ul class="flex-menu">
             <li><a href="index.html">Hjem</a></li>
             <li><a href="product.html">Produkter</a></li>
-            <li><a href="#">Kategorier</a></li>
+            <li><a href="index.html#categories">Kategorier</a></li>
             <li><a href="#contact-info">Kontakt oss</a></li>
           </ul>
           <a href="#"
@@ -65,7 +66,7 @@
         <section id="products">
           <article class="product-card">
             <img src="https://picsum.photos/id/8/200/300" alt="Produktet" />
-            <p>Product name</p>
+            <h3>Product name</h3>
             <p>Kr 1999</p>
           </article>
           <article class="product-card">
@@ -97,7 +98,7 @@
 
         <section id="categories">
           <h3>Våre mest populære kategorier</h3>
-          <p>OIppdag det beste av det beste</p>
+          <p>Oppdag det beste av det beste</p>
           <h4>Category 1</h4>
           <h4>Category 2</h4>
           <h4>Category 3</h4>
@@ -108,7 +109,10 @@
         <section id="review">
           <h5>Anmeldelser</h5>
           <article>
-            <img src="https://picsum.photos/id/40/200/200" alt="Anmeldelser" />
+            <img
+              src="https://picsum.photos/id/40/200/200"
+              alt="Profilbilde til bruker"
+            />
             <p>Mister Whisker</p>
             <p>
               Etiam bibendum quam at ipsum luctus, vitae semper nisi vulputate.
@@ -120,7 +124,10 @@
             </p>
           </article>
           <article>
-            <img src="https://picsum.photos/id/40/200/200" alt="Anmeldelser" />
+            <img
+              src="https://picsum.photos/id/40/200/200"
+              alt="Profilbilde til bruker"
+            />
             <p>Mister Whisker</p>
             <p>
               Etiam bibendum quam at ipsum luctus, vitae semper nisi vulputate.
@@ -132,7 +139,10 @@
             </p>
           </article>
           <article>
-            <img src="https://picsum.photos/id/40/200/200" alt="Anmeldelser" />
+            <img
+              src="https://picsum.photos/id/40/200/200"
+              alt="Profilbilde til bruker"
+            />
             <p>Mister Whisker</p>
             <p>
               Etiam bibendum quam at ipsum luctus, vitae semper nisi vulputate.
@@ -170,30 +180,50 @@
 
         <h5>KONTAKT</h5>
         <ul id="contact-info">
-          <li>Adresse: B R A Veien 4, 1757 Halden</li>
-          <li>Telefon: 69 60 80 00</li>
-          <li>E-post: halden@hiof.no</li>
-          <li>Åpningstider: Stenger 15:00</li>
+          <li>
+            <span><i class="fa-solid fa-location-dot"></i></span>
+            Adresse: B R A Veien 4, 1757 Halden
+          </li>
+          <li>
+            <span><i class="fa-solid fa-phone"></i></span>
+            Telefon: 69 60 80 00
+          </li>
+          <li>
+            <span><i class="fa-solid fa-envelope"></i></span>
+            E-post: halden@hiof.no
+          </li>
+          <li>
+            <span><i class="fa-solid fa-clock"></i></span>
+            Åpningstider: Stenger 15:00
+          </li>
         </ul>
         <h5>SNARVEIER</h5>
         <ul id="footer-nav">
-          <li><a href="#">Produkter</a></li>
-          <li><a href="#">Kategorier</a></li>
-          <li><a href="#">Kontakt oss</a></li>
+          <li><a href="product.html">Produkter</a></li>
+          <li><a href="index.html#categories">Kategorier</a></li>
+          <li><a href="#contant-info">Kontakt oss</a></li>
         </ul>
         <h5>SOSIALE MEDIER</h5>
         <ul>
           <li>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.instagram.com/">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
           </li>
           <li>
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.facebook.com/"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
           </li>
           <li>
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
           </li>
           <li>
-            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+            <a href="https://no.pinterest.com/"
+              ><i class="fa-brands fa-pinterest"></i
+            ></a>
           </li>
         </ul>
       </footer>
