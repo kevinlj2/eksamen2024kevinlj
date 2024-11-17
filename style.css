@@ -1,11 +1,347 @@
-html {
-    font-size: calc(1em + 1vw)
-}
-
+/* Alle sidene */
 * {
     box-sizing: border-box;
+    margin: 2px;
+    padding: 0;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:Arial, Helvetica, sans-serif
 }
+
+#global-header {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+}
+
+.flex-space-between  {
+
+    .flex-menu {
+        padding: 1rem 0 1rem;
+        list-style: none;
+        display: grid;
+        gap: 1rem;
+
+    }
+
+        #search-bar {
+        input {
+            width: 250px;
+            height: 35px;
+            padding: 0.5rem;
+            background-color: white;
+            border-width: 1px;
+            border-style: solid;
+            border-color: black;
+        }
+
+        button {
+            height: 35px;
+            width: 40px;
+            padding: 0.5rem;
+            background-color: white;
+            border-width: 1px;
+            border-style: solid;
+            border-color: black;
+        }
+    }
+
+
+    #main-logo {
+        border-radius: 100px;  
+        width: 110px;
+    }
+
+    a {
+        text-decoration: none;
+        color: black
+    }
+}
+
+main {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+footer {
+    border-top: rgba(0, 0, 0, 0.329);
+    border-top-width: 1px;
+    border-top-style: solid;
+    display: grid;
+    gap: 2rem;
+    padding: 2rem 0 0;
+
+    #footer-logo {
+        width: 120px;
+        border-radius: 100px;
+    }
+
+    #contact-info li {
+        font-weight: bold;
+    }
+
+    ul {
+        list-style: none;
+        display: grid;
+        gap: 0.5rem;
+    }
+    
+    a {
+        color: black;
+        text-decoration: none;
+    }
+}
+        
+/* index.html */
+#banner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    padding: 1.5rem;
+    background-color: #ccc;
+    gap: 2rem;
+
+    a {
+        text-decoration: none;
+        color: black;
+        background-color: white;
+        font-weight: bold;
+        padding: 1rem;
+    }
+}
+
+
+.pop-sellers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    justify-content: center;
+    padding: 3rem 0 0;
+    gap: 1rem;
+
+    h1 {
+        grid-column: 1 / 4;
+        grid-row: 1/2;
+    }
+
+    p {
+        grid-column: 1/4;
+        grid-row: 2/3;
+    }
+
+    #new-product {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        padding: 1rem;
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgb(148, 135, 135);
+    }
+
+    #special-price {
+        grid-column: 2/3;
+        grid-row: 3/4;
+        padding: 1rem;
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgb(148, 135, 135);
+    }
+
+    #best-sellers {
+        grid-column: 3/4;
+        grid-row: 3/4;
+        display: flex;
+        padding: 1rem;
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgb(148, 135, 135);
+    }
+    
+}
+
+.products {
+
+    padding: 1rem 0 1.5rem;
+
+    .product-card  {
+
+        padding-top: 1rem;
+
+        img {
+            width: 100%;
+        }
+
+        h3{
+            padding-top: 1rem;
+        }
+
+        p {
+            padding-top: 1rem;
+        }
+    }
+}
+
+#categories {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, auto);
+    gap: 1rem;
+    padding: 1.5rem 0 1.5rem;
+
+    article {
+        border-style: solid;
+        border-color: black;
+        border-width: 1px;
+        max-width: 100%;
+        min-height: 200px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.reviews {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: left;
+    gap: 1rem;
+
+    h3 {
+        font-size: 24px;
+    }
+
+    article {
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.110);
+    border-width: 1px;
+    padding: 1rem;
+
+        img {
+            max-width: 120px;
+        }
+
+        .username {
+            font-weight: bold;
+            padding: 1rem 0 1rem;
+        }
+
+        p {
+            font-weight: 500;
+            padding: 0 0 1rem;
+        }
+    }
+}
+
+/* Checkout.html */
+#user-cart {
+    h2 {
+        padding: 1rem 0 0;
+        font-weight: bold;
+        font-size: 30px;
+    }
+    article {
+
+        img {
+            max-width: 400px;
+            padding: 1rem 0 1rem;
+        }
+    }
+}
+
+#user-info {
+    h2 {
+        padding: 2rem 0 2rem;
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    form {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat (5, auto);
+
+        input {
+            padding: 0.5rem;
+            width: 400px;
+            height: 50px;
+        }
+
+        a {
+            color:blue;
+            padding: 0.5rem;
+        }
+    }
+    
+    #saveButton {
+        width: 70px;
+        height: 50px;
+        background-color: rgb(83, 80, 80);
+        color: white;
+        border-radius: 0;
+    }
+}
+
+#user-delivery {
+    
+    form {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+
+        p {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            padding: 1rem;
+        }
+    }
+    h2{
+        padding: 1rem 0 1rem;
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+}
+
+#user-pay {
+    
+    h2 {
+        padding: 1rem 0 1rem;
+    }
+
+    form {
+
+        #pay-with-card {
+            font-weight: bold;
+        }
+
+        input {
+            padding: 1rem;
+            width: 400px;
+        }
+
+        span {
+            padding: 2rem 0 0;
+        }
+
+        #purchaseButton {
+            padding: 0rem;
+            width: 90px;
+            height: 50px;
+            background-color: rgb(83, 80, 80);
+            color: white;
+            border-radius: 0;
+        }
+    }
+
+    label#newsletter , label#offers-and-news  {
+        display: flex;
+        
+}
+}
+
+
