@@ -12,13 +12,6 @@
   <body>
     <div id="grid-container">
       <header id="global-header">
-        <a href="index.html">
-          <img
-            id="main-logo"
-            src="https://picsum.photos/200"
-            alt="Hovedlogo for nettsiden"
-          />
-        </a>
         <nav class="flex-space-between">
           <form id="search-bar">
             <label for="search">
@@ -31,89 +24,101 @@
           <ul class="flex-menu">
             <li><a href="index.html">Hjem</a></li>
             <li><a href="product.html">Produkter</a></li>
+            <li>
+              <a href="index.html"
+                ><img
+                  id="main-logo"
+                  src="https://picsum.photos/200"
+                  alt="Hovedlogo for nettsiden"
+              /></a>
+            </li>
             <li><a href="index.html#categories">Kategorier</a></li>
             <li><a href="#contact-info">Kontakt oss</a></li>
+            <li>
+              <a href="#" class="icons"
+                ><span><i class="fa-regular fa-user"></i></span
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="icons"
+                ><span><i class="fa-regular fa-heart"></i></span
+              ></a>
+            </li>
+            <li>
+              <a href="checkout.html" class="icons"
+                ><span><i class="fa-solid fa-cart-shopping"></i></span
+              ></a>
+            </li>
           </ul>
-          <a href="#"
-            ><span><i class="fa-regular fa-user"></i></span
-          ></a>
-          <a href="#"
-            ><span><i class="fa-regular fa-heart"></i></span
-          ></a>
-          <a href="checkout.html"
-            ><span><i class="fa-solid fa-cart-shopping"></i></span
-          ></a>
         </nav>
       </header>
       <main>
-        <section>
-          <div id="banner">
-            <h2>Praesent ut sollicitudin mauris, sit amet rhoncus nisi.</h2>
-            <p>
-              Orci varius natoque penatibus et magnis dis parturient montes,
-              nascetur ridiculus mus.
-            </p>
-            <p>FÅ EN PRØVE PAKKE I DAG</p>
-          </div>
+        <section id="banner">
+          <h2>Praesent ut sollicitudin mauris, sit amet rhoncus nisi.</h2>
+          <p>
+            Orci varius natoque penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus.
+          </p>
+          <a href="#">FÅ EN PRØVE PAKKE I DAG</a>
         </section>
-        <section>
-          <h3>Våre mest populære produkter</h3>
+        <section class="pop-sellers">
+          <h1>Våre mest populære produkter</h1>
           <p>Oppdag det av det beste</p>
-          <p>New Product</p>
-          <p>Special Price</p>
-          <p>Best Sellers</p>
+          <p id="new-product">New Product</p>
+          <p id="special-price">Special Price</p>
+          <p id="best-sellers">Best Sellers</p>
         </section>
-        <section id="products">
+        <section class="products">
           <article class="product-card">
-            <img src="https://picsum.photos/id/8/200/300" alt="Produktet" />
+            <img src="https://picsum.photos/id/8/200/200" alt="Produktet" />
             <h3>Product name</h3>
             <p>Kr 1999</p>
           </article>
           <article class="product-card">
-            <img src="https://picsum.photos/id/8/200/300" alt="Produktet" />
-            <p>Product name</p>
+            <img src="https://picsum.photos/id/8/200/200" alt="Produktet" />
+            <h3>Product name</h3>
             <p>Kr 1999</p>
           </article>
           <article class="product-card">
-            <img src="https://picsum.photos/id/8/200/300" alt="Produktet" />
-            <p>Product name</p>
+            <img src="https://picsum.photos/id/8/200/200" alt="Produktet" />
+            <h3>Product name</h3>
             <p>Kr 1999</p>
           </article>
           <article class="product-card">
-            <img src="https://picsum.photos/id/8/200/300" alt="Produktet" />
-            <p>Product name</p>
+            <img src="https://picsum.photos/id/8/200/200" alt="Produktet" />
+            <h3>Product name</h3>
             <p>Kr 1999</p>
           </article>
           <article class="product-card">
-            <img src="https://picsum.photos/id/8/200/300" alt="Produktet" />
-            <p>Product name</p>
+            <img src="https://picsum.photos/id/8/200/200" alt="Produktet" />
+            <h3>Product name</h3>
             <p>Kr 1999</p>
           </article>
           <article class="product-card">
-            <img src="https://picsum.photos/id/8/200/300" alt="Produktet" />
-            <p>Product name</p>
+            <img src="https://picsum.photos/id/8/200/200" alt="Produktet" />
+            <h3>Product name</h3>
             <p>Kr 1999</p>
           </article>
         </section>
 
         <section id="categories">
-          <h3>Våre mest populære kategorier</h3>
+          <h2>Våre mest populære kategorier</h2>
           <p>Oppdag det beste av det beste</p>
-          <h4>Category 1</h4>
-          <h4>Category 2</h4>
-          <h4>Category 3</h4>
-          <h4>Category 4</h4>
-          <h4>Category 5</h4>
+          <article><h4>Category 1</h4></article>
+          <article><h4>Category 2</h4></article>
+          <article><h4>Category 3</h4></article>
+          <article><h4>Category 4</h4></article>
+          <article><h4>Category 5</h4></article>
         </section>
 
-        <section id="review">
-          <h5>Anmeldelser</h5>
+        <section class="reviews">
+          <h3>Anmeldelser</h3>
           <article>
             <img
               src="https://picsum.photos/id/40/200/200"
               alt="Profilbilde til bruker"
             />
-            <p>Mister Whisker</p>
+            <p class="username">Mister Whisker</p>
             <p>
               Etiam bibendum quam at ipsum luctus, vitae semper nisi vulputate.
               Suspendisse laoreet ante interdum erat iaculis, sit amet porta
@@ -128,7 +133,7 @@
               src="https://picsum.photos/id/40/200/200"
               alt="Profilbilde til bruker"
             />
-            <p>Mister Whisker</p>
+            <p class="username">Mister Whisker</p>
             <p>
               Etiam bibendum quam at ipsum luctus, vitae semper nisi vulputate.
               Suspendisse laoreet ante interdum erat iaculis, sit amet porta
@@ -143,7 +148,7 @@
               src="https://picsum.photos/id/40/200/200"
               alt="Profilbilde til bruker"
             />
-            <p>Mister Whisker</p>
+            <p class="username">Mister Whisker</p>
             <p>
               Etiam bibendum quam at ipsum luctus, vitae semper nisi vulputate.
               Suspendisse laoreet ante interdum erat iaculis, sit amet porta
@@ -155,7 +160,7 @@
           </article>
           <article>
             <img src="https://picsum.photos/id/40/200/200" alt="Anmeldelser" />
-            <p>Mister Whisker</p>
+            <p class="username">Mister Whisker</p>
             <p>
               Etiam bibendum quam at ipsum luctus, vitae semper nisi vulputate.
               Suspendisse laoreet ante interdum erat iaculis, sit amet porta
@@ -204,7 +209,7 @@
           <li><a href="#contant-info">Kontakt oss</a></li>
         </ul>
         <h5>SOSIALE MEDIER</h5>
-        <ul>
+        <ul id="social-media">
           <li>
             <a href="https://www.instagram.com/">
               <i class="fa-brands fa-instagram"></i>
