@@ -53,7 +53,7 @@
         </nav>
       </header>
       <main>
-        <h1 id=" ">Kasse</h1>
+        <h1>Kasse</h1>
         <section id="user-cart">
           <h2>1. SHOPPINGBAGGEN DIN</h2>
           <article>
@@ -115,7 +115,6 @@
                 name="postnumber"
                 placeholder="Postnummer*"
                 id="postnumber"
-                maxlength="10"
                 required
               />
             </label>
@@ -163,27 +162,27 @@
               <input
                 type="number"
                 name="cardnumber"
+                id="cardnumber"
                 placeholder="4124 **** 8532 ****"
                 required
               />
             </label>
             <label for="carddate">
               Utløpsdato
-              <input type="date" name="carddate" required />
+              <input type="date" id="carddate" name="carddate" required />
             </label>
             <label for="CVCnumber">
               CVC/CVV
               <input
                 type="number"
                 name="CVCnumber"
+                id="CVCnumber"
                 placeholder="CVC/CVV"
                 required
               />
             </label>
-            <span>
-              <p>Å betale inkl. mva.</p>
-              <p>1 199 kr</p>
-            </span>
+            <p>Å betale inkl. mva.</p>
+            <p>1 199 kr</p>
             <input
               id="purchaseButton"
               type="submit"
@@ -221,20 +220,20 @@
         <h5>KONTAKT</h5>
         <ul id="contact-info">
           <li>
-            <span><i class="fa-solid fa-location-dot"></i></span>
-            Adresse: B R A Veien 4, 1757 Halden
+            <span><i class="fa-solid fa-location-dot"></i> Adresse:</span>
+            B R A Veien 4, 1757 Halden
           </li>
           <li>
-            <span><i class="fa-solid fa-phone"></i></span>
-            Telefon: 69 60 80 00
+            <span><i class="fa-solid fa-phone"></i> Telefon:</span>
+            69 60 80 00
           </li>
           <li>
-            <span><i class="fa-solid fa-envelope"></i></span>
-            E-post: halden@hiof.no
+            <span><i class="fa-solid fa-envelope"></i> E-post:</span>
+            halden@hiof.no
           </li>
           <li>
-            <span><i class="fa-solid fa-clock"></i></span>
-            Åpningstider: Stenger 15:00
+            <span><i class="fa-solid fa-clock"></i> Åpningstider:</span>
+            Stenger 15:00
           </li>
         </ul>
         <h5>SNARVEIER</h5>

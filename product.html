@@ -12,9 +12,6 @@
   <body>
     <div id="grid-container">
       <header id="global-header">
-        <a href="index.html">
-          <img id="main-logo" src="https://picsum.photos/200" alt="Hovedlogo" />
-        </a>
         <nav class="flex-space-between">
           <form id="search-bar">
             <label for="search">
@@ -27,87 +24,101 @@
           <ul class="flex-menu">
             <li><a href="index.html">Hjem</a></li>
             <li><a href="product.html">Produkter</a></li>
+            <li>
+              <a href="index.html"
+                ><img
+                  id="main-logo"
+                  src="https://picsum.photos/200"
+                  alt="Hovedlogo for nettsiden"
+              /></a>
+            </li>
             <li><a href="index.html#categories">Kategorier</a></li>
-            <li><a href="product.html#contact-info">Kontakt oss</a></li>
+            <li><a href="#contact-info">Kontakt oss</a></li>
+            <li>
+              <a href="#" class="icons"
+                ><span><i class="fa-regular fa-user"></i></span
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="icons"
+                ><span><i class="fa-regular fa-heart"></i></span
+              ></a>
+            </li>
+            <li>
+              <a href="checkout.html" class="icons"
+                ><span><i class="fa-solid fa-cart-shopping"></i></span
+              ></a>
+            </li>
           </ul>
-          <a href="#"
-            ><span><i class="fa-regular fa-user"></i></span
-          ></a>
-          <a href="#"
-            ><span><i class="fa-regular fa-heart"></i></span
-          ></a>
-          <a href="checkout.html"
-            ><span><i class="fa-solid fa-cart-shopping"></i></span
-          ></a>
         </nav>
       </header>
       <h2 id="breadcrumbs">
         <span><a href="index.html">Hjem</a></span> >
         <span><a href="index.html#categories">Kategori</a></span> >
-        <span><a href="#">Produktnavn</a></span>
+        <span><a href="#" id="current-site">Produktnavn</a></span>
       </h2>
       <main>
-        <section>
-          <article>
+        <section id="products">
+          <article id="product-on-display">
             <img src="bilder/dressjakke.jpg" alt="produkt bilde" />
             <img src="bilder/dressjakke.jpg" alt="produkt bilde" />
             <img src="bilder/dressjakke.jpg" alt="produkt bilde" />
             <img src="bilder/dressjakke.jpg" alt="produkt bilde" />
             <!--Image by <a href="https://pixabay.com/users/clangs-825633/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2688317">智铿 梁</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2688317">Pixabay</a>-->
-            <h3>Produktnavn</h3>
-            <p>MERKENAVN</p>
+            <h1>Produktnavn</h1>
+            <p id="brand">MERKENAVN</p>
             <p>5 195 kr inkl. mva.</p>
-            <p>Farge: Blå</p>
+            <p>Farge: <span id="color-on-product">Blå</span></p>
           </article>
         </section>
-        <section>
-          <h4>Lignende produkter</h4>
-          <article>
+        <section id="sim-prod">
+          <h2>Lignende produkter</h2>
+          <article class="product-display">
             <img
-              src="https://picsum.photos/id/21/200/300"
+              src="https://picsum.photos/id/48/600/400"
               alt="produkt bilde"
             />
-            <h4>Product name</h4>
+            <h3>Product name</h3>
             <p>Kr 1999</p>
           </article>
-          <article>
+          <article class="product-display">
             <img
-              src="https://picsum.photos/id/21/200/300"
+              src="https://picsum.photos/id/48/600/400"
               alt="produkt bilde"
             />
-            <h4>Product name</h4>
+            <h3>Product name</h3>
             <p>Kr 1999</p>
           </article>
-          <article>
+          <article class="product-display">
             <img
-              src="https://picsum.photos/id/21/200/300"
+              src="https://picsum.photos/id/48/600/400"
               alt="produkt bilde"
             />
-            <h4>Product name</h4>
+            <h3>Product name</h3>
             <p>Kr 1999</p>
           </article>
-          <article>
+          <article class="product-display">
             <img
-              src="https://picsum.photos/id/21/200/300"
+              src="https://picsum.photos/id/48/600/400"
               alt="produkt bilde"
             />
-            <h4>Product name</h4>
+            <h3>Product name</h3>
             <p>Kr 1999</p>
           </article>
-          <article>
+          <article class="product-display">
             <img
-              src="https://picsum.photos/id/21/200/300"
+              src="https://picsum.photos/id/48/600/400"
               alt="produkt bilde"
             />
-            <h4>Product name</h4>
+            <h3>Product name</h3>
             <p>Kr 1999</p>
           </article>
-          <article>
+          <article class="product-display">
             <img
-              src="https://picsum.photos/id/21/200/300"
+              src="https://picsum.photos/id/48/600/400"
               alt="produkt bilde"
             />
-            <h4>Product name</h4>
+            <h3>Product name</h3>
             <p>Kr 1999</p>
           </article>
         </section>
@@ -117,27 +128,28 @@
           <img
             id="footer-logo"
             src="https://picsum.photos/200"
-            alt="footer-logo"
+            alt="Footer logoen for nettsiden"
           />
         </a>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <h5>KONTAKT</h5>
+
+        <h4>KONTAKT</h4>
         <ul id="contact-info">
           <li>
-            <span><i class="fa-solid fa-location-dot"></i></span>
-            Adresse: B R A Veien 4, 1757 Halden
+            <span><i class="fa-solid fa-location-dot"></i> Adresse:</span>
+            B R A Veien 4, 1757 Halden
           </li>
           <li>
-            <span><i class="fa-solid fa-phone"></i></span>
-            Telefon: 69 60 80 00
+            <span><i class="fa-solid fa-phone"></i> Telefon:</span>
+            69 60 80 00
           </li>
           <li>
-            <span><i class="fa-solid fa-envelope"></i></span>
-            E-post: halden@hiof.no
+            <span><i class="fa-solid fa-envelope"></i> E-post:</span>
+            halden@hiof.no
           </li>
           <li>
-            <span><i class="fa-solid fa-clock"></i></span>
-            Åpningstider: Stenger 15:00
+            <span><i class="fa-solid fa-clock"></i> Åpningstider:</span>
+            Stenger 15:00
           </li>
         </ul>
         <h5>SNARVEIER</h5>
@@ -147,7 +159,7 @@
           <li><a href="#contant-info">Kontakt oss</a></li>
         </ul>
         <h5>SOSIALE MEDIER</h5>
-        <ul>
+        <ul id="social-media">
           <li>
             <a href="https://www.instagram.com/">
               <i class="fa-brands fa-instagram"></i>
