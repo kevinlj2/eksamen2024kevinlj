@@ -23,7 +23,7 @@
           </form>
           <ul class="flex-menu">
             <li><a href="index.html">Hjem</a></li>
-            <li><a href="product.html">Produkter</a></li>
+            <li><a href="index.html#products">Produkter</a></li>
             <li>
               <a href="index.html"
                 ><img
@@ -53,8 +53,8 @@
         </nav>
       </header>
       <main>
-        <h1>Kasse</h1>
         <section id="user-cart">
+          <h1>Kasse</h1>
           <h2>1. SHOPPINGBAGGEN DIN</h2>
           <article>
             <img src="bilder/dressjakke.jpg" alt="Produktet" />
@@ -75,7 +75,6 @@
             <p>Farge: Blå</p>
           </article>
         </section>
-
         <section id="user-info">
           <h2>2. DINE OPPLYSNINGER</h2>
           <form method="post">
@@ -134,7 +133,6 @@
             <a href="index.html">Avbryt</a>
           </form>
         </section>
-
         <section id="user-delivery">
           <h2>3. LEVERING</h2>
           <form>
@@ -181,14 +179,16 @@
                 required
               />
             </label>
-            <p>Å betale inkl. mva.</p>
-            <p>1 199 kr</p>
-            <input
-              id="purchaseButton"
-              type="submit"
-              name="complete-purc"
-              value="Fullfør kjøp"
-            />
+            <div id="totalsum">
+              <p>Å betale inkl. mva.</p>
+              <p>1 199 kr</p>
+              <input
+                id="purchaseButton"
+                type="submit"
+                name="complete-purc"
+                value="Fullfør kjøp"
+              />
+            </div>
           </form>
           <p>
             Du bekrefter herved at opplysningene og dokumentene du har oppgitt
@@ -206,7 +206,6 @@
           </label>
         </section>
       </main>
-
       <footer>
         <a href="index.html">
           <img
